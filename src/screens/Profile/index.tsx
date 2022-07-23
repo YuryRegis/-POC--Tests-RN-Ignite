@@ -4,11 +4,20 @@ import { View, Text, TextInput, Button } from "react-native";
 function Profile() {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text testID="text-title">Profile</Text>
 
-      <TextInput placeholder="Enter your name" autoCorrect={false} />
+      <TextInput
+        value="Harry"
+        testID="input-name"
+        autoCorrect={false}
+        placeholder="Enter your name"
+      />
 
-      <TextInput placeholder="Enter your last name" />
+      <TextInput
+        value="Potter"
+        testID="input-surname"
+        placeholder="Enter your last name"
+      />
 
       <Button title="Save" onPress={() => {}} />
     </View>
